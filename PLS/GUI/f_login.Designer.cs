@@ -36,18 +36,14 @@
             this.txtphongban = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.checkremem = new DevExpress.XtraEditors.CheckEdit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnlgin = new DevExpress.XtraEditors.SimpleButton();
             this.txtpass1 = new DevExpress.XtraEditors.TextEdit();
             this.txtuser1 = new DevExpress.XtraEditors.TextEdit();
             this.lbldb = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtidnv = new System.Windows.Forms.TextBox();
-            this.imageComboBoxEdit1 = new DevExpress.XtraEditors.ImageComboBoxEdit();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnlgin = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnconnect = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,25 +51,33 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnLangLA = new DevExpress.XtraEditors.PictureEdit();
             this.btnLangVI = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.txtidnv = new System.Windows.Forms.TextBox();
+            this.imageComboBoxEdit1 = new DevExpress.XtraEditors.ImageComboBoxEdit();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             labelControl4 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtpass1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtuser1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageComboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkremem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtpass1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtuser1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLangLA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLangVI.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageComboBoxEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl4
             // 
             labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(71)))), ((int)(((byte)(58)))));
+            labelControl4.Appearance.Options.UseFont = true;
+            labelControl4.Appearance.Options.UseForeColor = true;
             labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
             labelControl4.LineColor = System.Drawing.Color.Black;
             labelControl4.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
@@ -128,6 +132,7 @@
             // panelControl1
             // 
             this.panelControl1.ContentImageAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            this.panelControl1.Controls.Add(this.checkremem);
             this.panelControl1.Controls.Add(labelControl4);
             this.panelControl1.Controls.Add(this.pictureBox4);
             this.panelControl1.Controls.Add(this.labelControl1);
@@ -153,10 +158,29 @@
             this.panelControl1.Size = new System.Drawing.Size(238, 267);
             this.panelControl1.TabIndex = 10;
             // 
+            // checkremem
+            // 
+            this.checkremem.Location = new System.Drawing.Point(139, 162);
+            this.checkremem.Name = "checkremem";
+            this.checkremem.Properties.Caption = "Remember?";
+            this.checkremem.Size = new System.Drawing.Size(75, 19);
+            this.checkremem.TabIndex = 32;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::GUI.Properties.Resources.line;
+            this.pictureBox4.Location = new System.Drawing.Point(9, 31);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(221, 10);
+            this.pictureBox4.TabIndex = 30;
+            this.pictureBox4.TabStop = false;
+            // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(71)))), ((int)(((byte)(58)))));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Left;
             this.labelControl1.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
             this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
@@ -165,6 +189,25 @@
             this.labelControl1.Size = new System.Drawing.Size(122, 23);
             this.labelControl1.TabIndex = 29;
             this.labelControl1.Text = "MEMBER LOGIN";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::GUI.Properties.Resources.line;
+            this.pictureBox3.Location = new System.Drawing.Point(6, 225);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(224, 10);
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnlgin
+            // 
+            this.btnlgin.ImageOptions.Image = global::GUI.Properties.Resources.icons8_enter_25;
+            this.btnlgin.Location = new System.Drawing.Point(48, 158);
+            this.btnlgin.Name = "btnlgin";
+            this.btnlgin.Size = new System.Drawing.Size(75, 23);
+            this.btnlgin.TabIndex = 27;
+            this.btnlgin.Text = "Login";
+            this.btnlgin.Click += new System.EventHandler(this.btnlgin_Click);
             // 
             // txtpass1
             // 
@@ -187,85 +230,14 @@
             this.lbldb.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lbldb.Appearance.Font = new System.Drawing.Font("Script MT Bold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldb.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lbldb.Appearance.Options.UseBackColor = true;
+            this.lbldb.Appearance.Options.UseFont = true;
+            this.lbldb.Appearance.Options.UseForeColor = true;
             this.lbldb.Location = new System.Drawing.Point(6, 194);
             this.lbldb.Name = "lbldb";
             this.lbldb.Size = new System.Drawing.Size(95, 25);
             this.lbldb.TabIndex = 22;
             this.lbldb.Text = "Data: CCS";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl3.Location = new System.Drawing.Point(55, 107);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(63, 15);
-            this.labelControl3.TabIndex = 7;
-            this.labelControl3.Text = "PASSWORD";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl2.LineColor = System.Drawing.Color.White;
-            this.labelControl2.Location = new System.Drawing.Point(55, 60);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(61, 15);
-            this.labelControl2.TabIndex = 6;
-            this.labelControl2.Text = "USERNAME";
-            // 
-            // txtidnv
-            // 
-            this.txtidnv.Enabled = false;
-            this.txtidnv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtidnv.Location = new System.Drawing.Point(18, 73);
-            this.txtidnv.Name = "txtidnv";
-            this.txtidnv.Size = new System.Drawing.Size(24, 27);
-            this.txtidnv.TabIndex = 15;
-            this.txtidnv.TextChanged += new System.EventHandler(this.txtidnv_TextChanged);
-            // 
-            // imageComboBoxEdit1
-            // 
-            this.imageComboBoxEdit1.Location = new System.Drawing.Point(18, 128);
-            this.imageComboBoxEdit1.Name = "imageComboBoxEdit1";
-            this.imageComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.imageComboBoxEdit1.Size = new System.Drawing.Size(12, 20);
-            this.imageComboBoxEdit1.TabIndex = 20;
-            this.imageComboBoxEdit1.Visible = false;
-            this.imageComboBoxEdit1.EditValueChanged += new System.EventHandler(this.imageComboBoxEdit1_EditValueChanged);
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Caramel";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::GUI.Properties.Resources.line;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 31);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(221, 10);
-            this.pictureBox4.TabIndex = 30;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GUI.Properties.Resources.line;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 225);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(224, 10);
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnlgin
-            // 
-            this.btnlgin.Image = global::GUI.Properties.Resources.icons8_enter_25;
-            this.btnlgin.Location = new System.Drawing.Point(64, 155);
-            this.btnlgin.Name = "btnlgin";
-            this.btnlgin.Size = new System.Drawing.Size(75, 23);
-            this.btnlgin.TabIndex = 27;
-            this.btnlgin.Text = "Login";
-            this.btnlgin.Click += new System.EventHandler(this.btnlgin_Click);
             // 
             // pictureBox2
             // 
@@ -281,8 +253,8 @@
             // 
             this.btnconnect.Appearance.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnconnect.Appearance.Options.UseFont = true;
-            this.btnconnect.Image = global::GUI.Properties.Resources.database_check_icon;
-            this.btnconnect.Location = new System.Drawing.Point(145, 155);
+            this.btnconnect.ImageOptions.Image = global::GUI.Properties.Resources.database_check_icon;
+            this.btnconnect.Location = new System.Drawing.Point(195, 194);
             this.btnconnect.Name = "btnconnect";
             this.btnconnect.Size = new System.Drawing.Size(30, 24);
             this.btnconnect.TabIndex = 21;
@@ -347,6 +319,56 @@
             this.btnLangVI.ToolTip = "Vietnamese";
             this.btnLangVI.Click += new System.EventHandler(this.btnLangVI_Click);
             // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(55, 107);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(63, 15);
+            this.labelControl3.TabIndex = 7;
+            this.labelControl3.Text = "PASSWORD";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.LineColor = System.Drawing.Color.White;
+            this.labelControl2.Location = new System.Drawing.Point(55, 60);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(61, 15);
+            this.labelControl2.TabIndex = 6;
+            this.labelControl2.Text = "USERNAME";
+            // 
+            // txtidnv
+            // 
+            this.txtidnv.Enabled = false;
+            this.txtidnv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidnv.Location = new System.Drawing.Point(18, 73);
+            this.txtidnv.Name = "txtidnv";
+            this.txtidnv.Size = new System.Drawing.Size(24, 27);
+            this.txtidnv.TabIndex = 15;
+            this.txtidnv.TextChanged += new System.EventHandler(this.txtidnv_TextChanged);
+            // 
+            // imageComboBoxEdit1
+            // 
+            this.imageComboBoxEdit1.Location = new System.Drawing.Point(18, 128);
+            this.imageComboBoxEdit1.Name = "imageComboBoxEdit1";
+            this.imageComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.imageComboBoxEdit1.Size = new System.Drawing.Size(12, 20);
+            this.imageComboBoxEdit1.TabIndex = 20;
+            this.imageComboBoxEdit1.Visible = false;
+            this.imageComboBoxEdit1.EditValueChanged += new System.EventHandler(this.imageComboBoxEdit1_EditValueChanged);
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Caramel";
+            // 
             // f_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,15 +390,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtpass1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtuser1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageComboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkremem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtpass1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtuser1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLangLA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLangVI.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageComboBoxEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,6 +431,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraEditors.CheckEdit checkremem;
     }
 }
 

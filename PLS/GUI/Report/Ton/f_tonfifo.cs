@@ -787,8 +787,6 @@ namespace GUI.Report.Nhap
                 //reset db
                 db.CommandTimeout = 0;
 
-                //db = new KetNoiDBDataContext();
-
                 Biencucbo.sp = "";
                 Biencucbo.doituong = "";
                 Biencucbo.congviec = "";
@@ -1265,7 +1263,7 @@ namespace GUI.Report.Nhap
                                select new
                                {
                                    idsp = a.id,
-                                   tondau = layton(tungay.DateTime,true,a.iddv,a.id),
+                                   tondau = layton(tungay.DateTime, true, a.iddv, a.id),
                                    nhap = a.sln,
                                    xuat = a.slx,
                                    toncuoiky = layton(denngay.DateTime, false, a.iddv, a.id),
@@ -1343,15 +1341,15 @@ namespace GUI.Report.Nhap
             if (dau)
             {
                 var nhap = (from a in db.r_pnhaps
-                    where a.iddv == iddv && a.idsanpham == idsp && a.ngaynhap < ngay
-                    select a.soluong
+                            where a.iddv == iddv && a.idsanpham == idsp && a.ngaynhap < ngay
+                            select a.soluong
                     ).Sum();
                 if (nhap == null)
                     nhap = 0;
 
                 var xuat = (from a in db.r_pxuats
-                    where a.iddv == iddv && a.idsanpham == idsp && a.ngayhd < ngay
-                    select a.soluong
+                            where a.iddv == iddv && a.idsanpham == idsp && a.ngayhd < ngay
+                            select a.soluong
                     ).Sum();
                 if (xuat == null)
                     xuat = 0;
@@ -1379,7 +1377,7 @@ namespace GUI.Report.Nhap
                 double ton = double.Parse(nhap.ToString()) - double.Parse(xuat.ToString());
                 return ton;
             }
-            
+
         }
 
         //private void laytonfifo2()
@@ -1943,13 +1941,8 @@ namespace GUI.Report.Nhap
         {
             SplashScreenManager.ShowForm(this, typeof(SplashScreen2), true, true, false);
 
-          laytonfifo();
+            laytonfifo();
 
-
-
-            //r_tonfifo xtra = new r_tonfifo();
-            //xtra.DataSource = lst4;
-            //xtra.ShowPreviewDialog();
             SplashScreenManager.CloseForm(false);
         }
     }

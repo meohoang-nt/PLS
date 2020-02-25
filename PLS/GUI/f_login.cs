@@ -18,6 +18,7 @@ using ControlLocalizer;
 using DevExpress.XtraEditors;
 using System.Threading;
 using DevExpress.XtraSplashScreen;
+using System.Xml;
 
 namespace GUI
 {
@@ -139,8 +140,51 @@ namespace GUI
             btnLangVI_Click(sender, e);
             lbldb.Text = "Data: " + Biencucbo.DbName;
             txtuser1.Focus();
-        
+
+            //Remember Me?
+            try
+            {
+                XmlDocument xmlDoc = new XmlDocument();
+                try
+                {
+                    xmlDoc.Load("appconfig.xml");
+                }
+                catch
+                {
+                    try
+                    {
+                        string filepath = "appconfig.xml";
+                        WebClient webClient = new WebClient();
+                        webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
+                        webClient.DownloadFileAsync(new Uri("http://www.petrolao.com.la/config/PLS_dev18/appconfig.xml"), filepath);
+                    }
+                    catch (Exception ex)
+                    { 
+                        MessageBox.Show(ex.ToString());
+                    }
+                }
+                int Remember = Convert.ToInt32(xmlDoc.DocumentElement["Remember"].InnerText);//gán giá trị cho biến Remmber từ file.xml
+                if (Remember == 1)//xét xem nó bằng 0 hay bằng 1, như mình nói ở trên: 1 là ghi nhớ, 0 là không ghi nhớ
+                {
+                    checkremem.Checked = true;
+                    txtuser1.Text = xmlDoc.DocumentElement["UserLogin"].InnerText;
+                    txtpass1.Text = MD5.Decrypt((xmlDoc.DocumentElement["PassLogin"].InnerText));
+                    txtpass1.Focus();
+                }
+                else if (Remember == 0)
+                {
+                    checkremem.Checked = false;
+                    txtuser1.Text = xmlDoc.DocumentElement["UserLogin"].InnerText;
+                    txtuser1.Focus();
+                }
+            }
+            catch { }
         }
+        private void Completed(object sender, AsyncCompletedEventArgs e)
+        {
+            MessageBox.Show("Download completed!");
+        }
+
         private void btnconnect_Click(object sender, EventArgs e)
         {
             f_connectDB frm = new f_connectDB();

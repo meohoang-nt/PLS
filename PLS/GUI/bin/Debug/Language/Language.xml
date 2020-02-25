@@ -16502,4 +16502,20 @@ Error Number:53,State:0,Class:20</value>
     <name>r_pnhap.xrTableCell23</name>
     <value>Hiệu chỉnh nhập (V_cl)</value>
   </Language>
+  <Language>
+    <name>r_tonfifo.xrTableCell4</name>
+    <value>Mã Đơn Vị</value>
+  </Language>
+  <Language>
+    <name>r_tonfifo.xrTableCell6</name>
+    <value>xrTableCell6</value>
+  </Language>
+  <Language>
+    <name>r_tonfifo.xrTableCell7</name>
+    <value>xrTableCell7</value>
+  </Language>
+  <Language>
+    <name>r_tonfifo.xrTableCell8</name>
+    <value>xrTableCell8</value>
+  </Language>
 </NewDataSet>

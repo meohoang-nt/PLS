@@ -897,6 +897,7 @@ namespace GUI.Report.Ton
                             select new
                             {
                                 a.id,
+                                madv=a.id,
                                 iddv = a.id + "-" + a.tendonvi,
                                 tendonvi = a.tendonvi,
                                 idcn = laytendv(a.iddv),
@@ -928,7 +929,8 @@ namespace GUI.Report.Ton
                            select a;
                 }
 
-                r_tontien xtra = new r_tontien();
+                //r_tontien xtra = new r_tontien();
+                r_tontien_new xtra = new r_tontien_new();
                 xtra.DataSource = lst1;
                 xtra.ShowPreviewDialog();
             }

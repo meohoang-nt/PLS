@@ -605,6 +605,12 @@
     <Compile Include="Report\Ton\f_tonfifo_2.Designer.cs">
       <DependentUpon>f_tonfifo_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\Ton\r_tontien_new.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Ton\r_tontien_new.Designer.cs">
+      <DependentUpon>r_tontien_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\Ton\r_tontien2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1091,6 +1097,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Ton\f_tonfifo_2.resx">
       <DependentUpon>f_tonfifo_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Ton\r_tontien_new.resx">
+      <DependentUpon>r_tontien_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Ton\r_tontien2.resx">
       <DependentUpon>r_tontien2.cs</DependentUpon>
